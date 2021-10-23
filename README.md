@@ -45,7 +45,7 @@ Details on each supported algorithm can be found in the [docs/algorithms](https:
 - **HQC**: HQC-128, HQC-192, HQC-256†
 - **Kyber**: Kyber512, Kyber512-90s, Kyber768, Kyber768-90s, Kyber1024, Kyber1024-90s
 - **NTRU**: NTRU-HPS-2048-509, NTRU-HPS-2048-677, NTRU-HPS-4096-821, NTRU-HRSS-701
-- **NTRU-Prime**: ntrulpr653, ntrulpr761, ntrulpr857, sntrup653, sntrup761, sntrup857
+- **NTRU-Prime**: ntrulpr653, ntrulpr761, ntrulpr857, ntrulpr1277, sntrup653, sntrup761, sntrup857, sntrup1277
 - **SABER**: LightSaber-KEM, Saber-KEM, FireSaber-KEM
 - **SIKE**: SIDH-p434, SIDH-p434-compressed, SIDH-p503, SIDH-p503-compressed, SIDH-p610, SIDH-p610-compressed, SIDH-p751, SIDH-p751-compressed, SIKE-p434, SIKE-p434-compressed, SIKE-p503, SIKE-p503-compressed, SIKE-p610, SIKE-p610-compressed, SIKE-p751, SIKE-p751-compressed
 <!--- OQS_TEMPLATE_FRAGMENT_LIST_KEXS_END -->
@@ -82,12 +82,12 @@ We realize some parties may want to deploy quantum-safe cryptography prior to th
 
 	On Ubuntu:
 
-		 sudo apt install astyle cmake gcc ninja-build libssl-dev python3-pytest python3-pytest-xdist unzip xsltproc doxygen graphviz
+		 sudo apt install astyle cmake gcc ninja-build libssl-dev python3-pytest python3-pytest-xdist unzip xsltproc doxygen graphviz python3-yaml
 
 	On macOS, using a package manager of your choice (we've picked Homebrew):
 
 		brew install cmake ninja openssl@1.1 wget doxygen graphviz astyle
-		pip3 install pytest pytest-xdist
+		pip3 install pytest pytest-xdist pyyaml
 
 	Note that, if you want liboqs to use OpenSSL for various symmetric crypto algorithms (AES, SHA-2, etc.) then you must have OpenSSL version 1.1.1 or higher.
 
